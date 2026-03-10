@@ -6,7 +6,7 @@ homepage: "https://github.com"
 documentation: "https://github.com"
 
 versions:
-  - sha: a2914fcd0dd1a87167fa714e3fa0ffbbe266fabd
+  - sha: dcd641d8c10eefbe911c7c289a1f0903569fb323
     changeNotes: |
       Lançamento inicial do template Meio Dev - Envio para Endpoint.
       Tag envia dados para um endpoint configurável via GET ou POST.
