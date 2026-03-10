@@ -134,6 +134,113 @@ ___TEMPLATE_PARAMETERS___
 ]
 
 
+___WEB_PERMISSIONS___
+
+[
+  {
+    "instance": {
+      "key": { "publicId": "send_pixel", "versionId": "1" },
+      "param": [
+        {
+          "key": "urls",
+          "value": {
+            "type": 2,
+            "listItem": [
+              { "type": 1, "string": "https://*" },
+              { "type": 1, "string": "http://*" }
+            ]
+          }
+        }
+      ]
+    },
+    "clientAnnotations": { "isEditedByUser": true },
+    "isRequired": true
+  },
+  {
+    "instance": {
+      "key": { "publicId": "inject_script", "versionId": "1" },
+      "param": [
+        {
+          "key": "urls",
+          "value": {
+            "type": 2,
+            "listItem": [
+              { "type": 1, "string": "https://*" },
+              { "type": 1, "string": "http://*" }
+            ]
+          }
+        }
+      ]
+    },
+    "clientAnnotations": { "isEditedByUser": true },
+    "isRequired": true
+  },
+  {
+    "instance": {
+      "key": { "publicId": "get_url", "versionId": "1" },
+      "param": [
+        { "key": "queriesAllowed", "value": { "type": 1, "string": "any" } },
+        { "key": "urlParts", "value": { "type": 1, "string": "any" } }
+      ]
+    },
+    "clientAnnotations": { "isEditedByUser": true },
+    "isRequired": true
+  },
+  {
+    "instance": {
+      "key": { "publicId": "get_referrer", "versionId": "1" },
+      "param": [
+        { "key": "queriesAllowed", "value": { "type": 1, "string": "any" } },
+        { "key": "urlParts", "value": { "type": 1, "string": "any" } },
+        { "key": "query", "value": { "type": 8, "boolean": true } }
+      ]
+    },
+    "clientAnnotations": { "isEditedByUser": true },
+    "isRequired": true
+  },
+  {
+    "instance": {
+      "key": { "publicId": "read_title", "versionId": "1" },
+      "param": []
+    },
+    "clientAnnotations": { "isEditedByUser": true },
+    "isRequired": true
+  },
+  {
+    "instance": {
+      "key": { "publicId": "access_globals", "versionId": "1" },
+      "param": [
+        {
+          "key": "keys",
+          "value": {
+            "type": 2,
+            "listItem": [
+              {
+                "type": 3,
+                "mapKey": [
+                  { "type": 1, "string": "key" },
+                  { "type": 1, "string": "read" },
+                  { "type": 1, "string": "write" },
+                  { "type": 1, "string": "execute" }
+                ],
+                "mapValue": [
+                  { "type": 1, "string": "meioDevSendPost" },
+                  { "type": 8, "boolean": false },
+                  { "type": 8, "boolean": false },
+                  { "type": 8, "boolean": true }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "clientAnnotations": { "isEditedByUser": true },
+    "isRequired": true
+  }
+]
+
+
 ___SANDBOXED_JS_FOR_WEB_TEMPLATE___
 
 const sendPixel = require('sendPixel');
