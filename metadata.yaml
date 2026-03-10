@@ -6,6 +6,9 @@ homepage: "https://github.com"
 documentation: "https://github.com"
 
 versions:
+  - sha: 7ce62067da55c822e3d5822d175fb3aec211ae42
+    changeNotes: |
+      Adicionada seção ___WEB_PERMISSIONS___ para validação na Galeria.
   - sha: dcd641d8c10eefbe911c7c289a1f0903569fb323
     changeNotes: |
       Lançamento inicial do template Meio Dev - Envio para Endpoint.
