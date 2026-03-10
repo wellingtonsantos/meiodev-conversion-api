@@ -1,0 +1,16 @@
+# Metadata para o template Meio Dev - Envio para Endpoint
+# Usado na publicação/submissão ao Google Tag Manager Community Template Gallery
+#
+# Ao publicar: substitua homepage e documentation pelas URLs reais do Meio Dev.
+# Em versions, use o SHA do commit correspondente a cada versão (ou HEAD para a atual).
+
+homepage: "https://github.com"
+documentation: "https://github.com"
+
+versions:
+  # Versão inicial (substitua HEAD pelo SHA do commit quando publicar)
+  - sha: HEAD
+    changeNotes: v1.0
+      Lançamento inicial do template Meio Dev - Envio para Endpoint.
+      Tag envia dados para um endpoint configurável via requisição GET.
+      Configuração: URL do endpoint, inclusão opcional de dados da página (URL, referrer, título, timestamp) e tabela de parâmetros customizados com suporte a variáveis GTM.
