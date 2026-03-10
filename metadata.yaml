@@ -6,6 +6,9 @@ homepage: "https://github.com"
 documentation: "https://github.com"
 
 versions:
+  - sha: 61244244544c51a5617e894d048cb33ab5e85171
+    changeNotes: |
+      Template exportado do GTM com categories (UTILITY, ANALYTICS).
   - sha: 7ce62067da55c822e3d5822d175fb3aec211ae42
     changeNotes: |
       Adicionada seção ___WEB_PERMISSIONS___ para validação na Galeria.
